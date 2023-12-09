@@ -1,0 +1,249 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+main {
+    display: grid;
+    grid-template-areas: "head head head"
+        "side cat cat"
+        "side content content";
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    
+    justify-content: space-between;
+    display: flex;
+    color: aliceblue;
+    grid-area: head;
+    
+}
+.field1, .field2, .field3{
+    display: flex;
+    margin: 15px;
+    
+}
+.field1 a{
+    margin-left: 15px;
+    margin-top: 0.5px;
+}
+.field1 img{
+    margin-left:25px;
+}
+.field1 div{
+    width: 110px;
+}
+.field1 div p{
+    text-align: end;
+    font-size: 10px;
+
+}
+.field1 h3{
+    font-size: 25px;
+    margin-left: 5px;
+    margin-top: -32px;
+
+}
+.field2 .search{
+    display: flex;
+}
+.field2 .search div{
+    justify-content: space-between;
+    height: 35px;
+    border-radius: 15px;
+    border: 1px solid hsl(0,0%,18.82%);
+    overflow: hidden;
+}
+.field2 input{
+    width: 500px;
+    padding:  3px 20px;
+    background-color: black;
+    border: none;
+    color: antiquewhite;
+    outline: none;
+}
+.field2 .button{
+    color: aliceblue;
+    background-color: hsl(0,0%,18.82%);
+    padding: 15px;
+    
+}
+.field2 .search .mike{
+    height: 35px;
+    width: 35px;
+    color: aliceblue;
+    background-color: hsl(0,0%,18.82%);
+    margin-left: 20px;
+    padding: 5px 0px 5px 9px;
+    border-radius: 50%;
+}
+.field3 .setting{
+    color: aliceblue;
+    margin-right: 20px;
+
+}
+.field3 .singup {
+    color: rgb(8, 178, 245);
+    align-items: center;
+    text-decoration: none;
+    display: flex; 
+    height: 35px;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid hsl(0,0%,18.82%);
+    overflow: hidden;
+}
+.field3 .singup svg{
+    margin: 8px;
+}
+.field3 p { 
+    font-size: 14px;
+    margin-top: 13px;
+}
+
+/* sidebar */
+article {
+    position: relative;
+    color: aliceblue;
+    grid-area: side;
+}
+.sidebar{
+padding: 0%;
+}
+.sidebar ul{
+    margin-left: -30px;
+}
+.sidebar ul .listinfo{
+    text-decoration: none;
+    color: antiquewhite;
+    display: flex;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding:5px 10px;
+    list-style-type: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.sidebar ul .listinfo:hover{
+    background-color: hsl(0,0%,18.82%);
+}
+.sidebar ul .listinfo svg{
+    height: auto;
+    width: auto;
+    fill: aliceblue;
+    padding-top: 0px;
+    size: 10px;
+
+}
+.sidebar ul .listinfo li{
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+
+.main {
+    grid-area: content;
+    margin-top: -35px;
+    padding-left: 15px;
+    
+}
+.container{
+    
+   
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    
+
+}
+.card{
+    margin-top: -60px;
+    background-color: black;
+    margin: 12px 7px;
+    color: aliceblue;
+    border-radius: 10px;
+    /*box-shadow: 5px 6px 10px rgb(99, 204, 171);*/
+    /*box-shadow: inset -200px -27px 80px aliceblue;*/
+}
+.card img{
+    border-radius: 10px;
+}
+.card .cardInfo div{
+    justify-content: space-between;
+    display: flex; 
+    padding-left: 5px; 
+    padding-top: 10px;
+    
+}
+.card .cardInfo div p{
+    padding-left: 5px;
+    
+
+}
+.card .cardInfo .chan{
+    font-size:11px;
+    font-weight: 700;
+    margin-top: -15px;
+    padding-left: 55px;
+}
+.card .cardInfo ul{
+    font-weight: 600;
+    margin-top: -15px;
+    padding-left: 50px;
+    display: flex; 
+    font-size:11px; 
+    color: gray; 
+    list-style-type: none;
+    /*text-shadow: 3px 5px 4px gray;*/
+}
+.card .cardInfo ul li{
+    padding-left: 3px;
+}
+
+
+/*artical 2 category*/
+.category{
+    height: 0px;
+    grid-area: cat;
+}
+ .cat{
+    padding-top: 10px;
+    padding-left: -10px;
+    
+}
+.cat ul{
+    
+    width: 1065px;
+    height: auto;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.cat ul::-webkit-scrollbar{
+    display: none;
+}
+.cat ul{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.cat ul .listcat{
+    flex: 0 0 auto;
+    width: auto;
+    font-size: 14.5px;
+    font-weight: 600;
+    color: aliceblue;
+    list-style-type: none;
+    margin: 5px;
+    padding: 2px 12px;
+    border-radius: 5px;
+    background-color: hsl(0,0%,18.82%);
+
+}
+.cat ul .all{
+    background-color: white;
+    color: black;
+}
